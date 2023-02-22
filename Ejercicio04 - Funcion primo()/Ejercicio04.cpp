@@ -1,7 +1,7 @@
-// 4. Hacer una funciÃ³n llamada â€œprimoâ€ que reciba un nÃºmero entero y devuelva 1 si el nÃºmero es primo o cero 
+// 4. Hacer una función llamada “primo” que reciba un número entero y devuelva 1 si el número es primo o cero 
 //    si no lo es. 
-//    Hacer un programa para ingresar nÃºmeros. El lote corta cuando se ingresa un nÃºmero cero. 
-//    Informar el promedio teniendo en cuenta sÃ³lo los nÃºmeros primos.
+//    Hacer un programa para ingresar números. El lote corta cuando se ingresa un número cero. 
+//    Informar el promedio teniendo en cuenta sólo los números primos.
 
 #include <iostream>
 
@@ -22,13 +22,16 @@ int main()
     cout << "Ingrese un numero: ";
     cin >> N;
 
-    if (N != 0) {
+    if (N != 0)
+    {
         BanNum = true;
     }
 
-    while (N != 0) {
+    while (N != 0)
+    {
 
-        if (Primo(N)) {
+        if (Primo(N))
+        {
             numPri++;
             acuPri += N;
             banPri = true;
@@ -39,44 +42,56 @@ int main()
         cin >> N;
     }
 
-    if (BanNum) {
-        if (banPri) {
+    if (BanNum)
+    {
+        if (banPri)
+        {
             Pro = Promedio(acuPri, numPri);
             cout << "\nEl promedio de numeros primos es: " << Pro << endl;
         }
-        else {
+        else
+        {
             cout << "\nNingun numero primo fue registrado." << endl;
         }
     }
-    else {
+    else
+    {
         cout << "\nError: ningun numero fue registrado." << endl;
     }
 
     return 0;
 }
 
-bool Primo(int N) {
-    if (N > 0) {
+bool Primo(int N)
+{
+    if (N > 0)
+    {
         int conPri = 0;
 
-        for (int i = 1; i <= N; i++) {
-            if (N % i == 0) {
+        for (int i = 1; i <= N; i++)
+        {
+            if (N % i == 0)
+            {
                 conPri++;
             }
         }
 
-        if (conPri == 2) {
+        if (conPri == 2)
+        {
             return true;
         }
-        else {
+        else
+        {
             return false;
         }
     }
-    else {
+    else
+    {
         return false;
     }
 }
 
-int Promedio(int Acu, int Con) {
+int Promedio(int Acu, int Con)
+{
     return Acu / Con;
 }

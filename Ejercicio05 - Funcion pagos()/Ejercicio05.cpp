@@ -1,7 +1,7 @@
-// 5. Hacer una funci√≥n llamada ‚Äúpagos‚Äù que reciba un monto (float) y una cantidad de pagos (entero) y devuelva 
+// 5. Hacer una funciÛn llamada ìpagosî que reciba un monto (float) y una cantidad de pagos (entero) y devuelva 
 //    el monto de cada pago. 
 //    Hacer un programa para ingresar 10 ventas. Para cada venta se conoce el monto y la cantidad de pagos. 
-//    El programa deber√° mostrar la cantidad de pagos y el monto del pago para cada una de las ventas.
+//    El programa deber· mostrar la cantidad de pagos y el monto del pago para cada una de las ventas.
 
 #include <iostream>
 
@@ -16,7 +16,8 @@ int main()
     int M, CP;
     float MC;
 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++)
+    {
 
         cout << "Ingrese el monto: $";
         cin >> M;
@@ -32,6 +33,7 @@ int main()
     return 0;
 }
 
-float Pagos(float M, int C) {
+float Pagos(float M, int C)
+{
     return M / C;
 }

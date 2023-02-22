@@ -1,4 +1,4 @@
-// 2. Hacer una funci√≥n llamada ‚Äúmayor‚Äù que reciba dos n√∫meros enteros y devuelva el mayor de ellos 
+// 2. Hacer una funciÛn llamada ìmayorî que reciba dos n˙meros enteros y devuelva el mayor de ellos 
 //    o cero si son iguales.
 
 #include <iostream>
@@ -20,24 +20,30 @@ int main()
 
     R = Mayor(A, B);
 
-    if (R != 0) {
+    if (R != 0)
+    {
         cout << "\nEl maximo es: " << R << endl;
     }
-    else {
+    else
+    {
         cout << "\nAmbos numeros son iguales." << endl;
     }
 
     return 0;
 }
 
-int Mayor(int N1, int N2) {
-    if (N1 == N2) {
+int Mayor(int N1, int N2)
+{
+    if (N1 == N2)
+    {
         return 0;
     }
-    else if (N1 > N2) {
+    else if (N1 > N2)
+    {
         return N1;
     }
-    else {
+    else
+    {
         return N2;
     }
 }

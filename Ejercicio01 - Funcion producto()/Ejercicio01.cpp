@@ -1,6 +1,6 @@
-// 1. Hacer una funci√≥n llamada ‚Äúproducto‚Äù que reciba dos n√∫meros enteros y que devuelva el producto de ambos. 
-//    Luego hacer un programa que pida el precio de un art√≠culo y la cantidad vendida y muestre por pantalla 
-//    el monto total a pagar. Usar la funci√≥n.
+// 1. Hacer una funciÛn llamada ìproductoî que reciba dos n˙meros enteros y que devuelva el producto de ambos. 
+//    Luego hacer un programa que pida el precio de un artÌculo y la cantidad vendida y muestre por pantalla 
+//    el monto total a pagar. Usar la funciÛn.
 
 #include <iostream>
 
@@ -26,7 +26,7 @@ int main()
     return 0;
 }
 
-int Producto(int A, int B) {
+int Producto(int A, int B)
+{
     return A * B;
 }
-

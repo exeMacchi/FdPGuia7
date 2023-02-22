@@ -1,5 +1,5 @@
-// 6. Hacer una funciÃ³n que se llame â€œsumaRestaâ€ que reciba dos nÃºmeros y que devuelva la suma y 
-//    la resta del primer nÃºmero con el segundo.
+// 6. Hacer una función que se llame “sumaResta” que reciba dos números y que devuelva la suma y 
+//    la resta del primer número con el segundo.
 
 #include <iostream>
 
@@ -25,7 +25,8 @@ int main()
     return 0;
 }
 
-int sumaResta(int N1, int& N2) {
+int sumaResta(int N1, int& N2)
+{
     int Suma = N1 + N2;
     N2 = N1 - N2;
     return Suma;
